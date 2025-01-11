@@ -37,7 +37,7 @@ const UserProfileForm = ({
   onSave,
   isLoading,
   currentUser,
-  title = "User Profile",
+ 
   buttonText = "Submit",
 }: Props) => {
   const form = useForm<UserFormData>({
