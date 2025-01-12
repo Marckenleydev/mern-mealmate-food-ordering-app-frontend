@@ -18,7 +18,7 @@ const MobileNav = () => {
         
         <SheetContent className='space-y-3'>
             <SheetTitle>
-            {isAuthenticated ?  (<span className='flex items-center font-bold'><CircleUserRound className='text-orange-500 mr-2'/>{user?.email}</span>):(  <span className=''>Welcome to MernEats!</span>)}
+            {isAuthenticated ?  (<span className='flex items-center font-semibold'><CircleUserRound className='text-orange-500 mr-2'/>{user?.email}</span>):(  <span className=''>Welcome to MernEats!</span>)}
           </SheetTitle>
             <Separator/>
 
