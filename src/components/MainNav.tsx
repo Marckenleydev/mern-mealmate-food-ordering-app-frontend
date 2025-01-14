@@ -13,7 +13,8 @@ const MainNav = () => {
           <NavLink to="/">HOME</NavLink>
           <NavLink to="/about">ABOUT</NavLink>
           <NavLink to="/contact">CONTACT</NavLink>
-          <NavLink to="/order-status">ORDER STATUS</NavLink>
+          {isAuthenticated &&(<NavLink to="/order-status">ORDER STATUS</NavLink>)}
+          
         </div>
       </div>
 
