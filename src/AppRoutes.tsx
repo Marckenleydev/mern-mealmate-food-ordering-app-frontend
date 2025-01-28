@@ -9,12 +9,16 @@ import ManageRestaurantPage from './pages/ManageRestaurantPage'
 import SearchPage from './pages/SearchPage'
 import RestaurantDetailsPages from './pages/RestaurantDetailsPages'
 import OrderStatusPage from './pages/OrderStatusPage'
+import Contact from './pages/Contact'
+import About from './pages/About'
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path='/auth-callback' element={<AuthCallBack/>} />
       <Route path='/search/:city' element={<Layout showHero={false}><SearchPage/></Layout>} />
+      <Route path='/contact' element={<Layout showHero={false}><Contact/></Layout>} />
+      <Route path='/about' element={<Layout showHero={false}><About/></Layout>} />
       <Route path='/detail/:restaurantId' element={<Layout showHero={false}><RestaurantDetailsPages/></Layout>} />
         <Route path="/" element={<Layout showHero><Home/></Layout>} />
 
